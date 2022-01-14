@@ -1,0 +1,30 @@
+{
+  "seed": 1024,
+  "data_dir": "data/superglue/rte",
+  "task_name": "rte",
+
+  "num_train_epochs": 5,
+  "train_batch_size": 16,
+  "eval_batch_size": 8,
+  "learning_rate": 2e-5,
+  "warmup_steps": 100,
+  "gradient_accumulation_steps": 4,
+
+  "unique_prompt": true,
+  "pattern_id": 2,
+  "wrapper_type": "rtd",
+
+  "model_type": "deberta",
+  "model_name_or_path": "microsoft/deberta-v3-base",
+
+  "max_grad_norm": 1.0,
+  "adam_epsilon": 1e-8,
+  "weight_decay": 0.01,
+  "max_seq_length": 256,
+  "no_cuda": false,
+  "do_train": true,
+  "do_eval": true,
+  "eval_every_step": 150,
+
+  "hidden_size": 256
+}

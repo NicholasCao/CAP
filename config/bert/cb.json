@@ -1,0 +1,34 @@
+{
+  "data_dir": "data/superglue/cb",
+  "gradient_accumulation_steps": 1,
+
+
+  "seed": 1024,
+  "model_type": "bert",
+  "model_name_or_path": "bert-base-cased",
+  "wrapper_type": "mlm",
+  "unique_prompt": true,
+  "pattern_id": 2,
+
+  "task_name": "cb",
+  "num_train_epochs": 6,
+  "train_batch_size": 8,
+  "eval_batch_size": 8,
+  "learning_rate": 3e-5,
+  "warmup_steps": 30,
+  "max_grad_norm": 1.0,
+  "adam_epsilon": 1e-8,
+  "weight_decay": 0.01,
+  "max_seq_length": 256,
+  "no_cuda": false,
+
+  "do_train": true,
+  "do_eval": true,
+
+
+
+  "hidden_size": 256,
+  "zero_shot": true
+
+
+}
